@@ -1,14 +1,17 @@
+import { useEffect, useState } from "react";
+import CardItem from "./CardItem";
+
 const Card = () => {
+    const [usersData, setUsersData] = useState();
+
+    useEffect(() => {
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then(response => response.json())
+            .then(data => setUsersData(data));
+    }, [])
+
     return <section>
-        <div>
-            <h1>Angular</h1>
-        </div>
-        <div>
-            <h1>ReactJS</h1>
-        </div>
-        <div>
-            <h1>VueJS</h1>
-        </div>
+        <CardItem usersData={usersData} />
     </section>
 }
 

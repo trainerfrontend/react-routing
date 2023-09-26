@@ -9,6 +9,8 @@ import TechStack from "../Pages/TechStack";
 import Contact from "../Pages/Contact";
 import RootLayout from "../Layout/RootLayout";
 import App from "../App";
+import Error from '../components/common/Error';
+import Detail from '../Pages/Detail';
 
 const Router = createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +19,8 @@ const Router = createBrowserRouter(
             <Route path="about" element={<About />} />
             <Route path="techstack" element={<TechStack />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="detail/:userid" element={<Detail />} />
+            <Route path="*" element={<Error />} />
         </Route>)
 )
 
