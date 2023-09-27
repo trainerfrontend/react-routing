@@ -2,7 +2,6 @@ import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Heading from "../components/common/Heading";
 
-
 const Contact = () => {
     const [isValid, setIsValid] = useState(true);
     const emailValue = useRef();
