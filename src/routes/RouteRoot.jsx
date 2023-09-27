@@ -14,6 +14,7 @@ import Error from '../components/common/Error';
 import Detail from '../Pages/Detail';
 import Faq from "../Pages/Faq";
 import Help from "../Pages/Help";
+import SendAMessage from '../Pages/SendAMessage';
 
 const Router = createBrowserRouter(
     createRoutesFromElements(
@@ -21,6 +22,7 @@ const Router = createBrowserRouter(
             <Route index element={<App />} />
             <Route path="about" element={<About />} />
             <Route path="techstack" element={<TechStack />} />
+            <Route path="sendamessage" element={<SendAMessage />} />
 
             <Route path="contact" element={<ContactLayout />}>
                 <Route path="faq" element={<Faq />} />

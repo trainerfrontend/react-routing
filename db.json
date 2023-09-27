@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "email": "test@hello.com",
+      "fullname": "Test Name",
+      "id": 4
+    },
+    {
+      "email": "John@hey.com",
+      "fullname": "John",
+      "id": 5
+    },
+    {
+      "email": "mary@we.com",
+      "fullname": "mary",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
